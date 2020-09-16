@@ -1,7 +1,7 @@
-# we watch tech
+# Langara Computer Science Club
 
-I watch previously recorded conference talks and then write about them. Why? To help me learn. And to consume more awesome talks.
+![Langara CS](https://img.shields.io/badge/langara-cs-%23f15a22) ![Discord](https://img.shields.io/discord/753037165050593300)
 
-## Submit a Talk
+This repo contains our website.
 
-Would you like to see me write about a talk? Simply create an issue on this repo and I'll get to it as soon as I can!
+> If you haven't already, make sure you join our [Discord server](https://discord.gg/uy3wCpZ) to collaborate with your fellow students!
