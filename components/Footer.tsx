@@ -1,5 +1,4 @@
 import Container from './Container'
-import Signup from './Signup'
 
 const Footer = () => {
   return (
@@ -7,13 +6,11 @@ const Footer = () => {
       <Container>
         <div className="py-10 md:py-20 space-y-4">
           <h3 className="text-4xl lg:text-5xl font-bold">
-            Have you seen a great talk?{' '}
-            <a className="link" href="mailto:hello@wewatch.tech">
-              Let me know!
+            Want to get involved?{' '}
+            <a className="link" href="https://discord.gg/uy3wCpZ">
+              Join our Discord
             </a>
           </h3>
-
-          <Signup />
         </div>
       </Container>
     </footer>

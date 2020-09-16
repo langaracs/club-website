@@ -25,10 +25,7 @@ const Meta = () => {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`I watch conference talks so you don't have to.`}
-      />
+      <meta name="description" content="Langara Computer Science Club." />
     </Head>
   )
 }

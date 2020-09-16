@@ -11,10 +11,10 @@ function Logo({ small }: Props) {
       style={{ width: 'max-content' }}
       className={`${textSize} text-right font-bold tracking-tighter leading-tight`}
     >
-      <div className={`${padding} whitespace-no-wrap`}>we watch</div>
+      <div className={`${padding} whitespace-no-wrap`}>langara</div>
       <div className={`rounded-b-lg ${padding} bg-black text-white`}>
-        <span className="text-wwt-yellow">.</span>
-        tech
+        <span className="text-brand-orange">.</span>
+        cs
       </div>
     </div>
   )

@@ -1,37 +1,67 @@
 import Head from 'next/head'
-
-import { getAllPosts } from '../lib/api'
-import Post from '../types/post'
+import { FaGithub } from 'react-icons/fa'
 
 import Container from '../components/Container'
 import Logo from '../components/Logo'
 import Layout from '../components/Layout'
-import LatestPost from '../components/LatestPost'
 
-type Props = {
-  allPosts: Post[];
-}
-
-const Index = ({ allPosts }: Props) => {
-  const latestPost = allPosts[0]
-
+const Index = () => {
   return (
     <>
       <Layout>
         <Head>
-          <title>Great tech talks distilled.</title>
+          <title>Langara Computer Science Club.</title>
           <meta property="og:image" content="/assets/og.png" />
         </Head>
 
         <Container>
           <Logo />
 
-          <div className="rounded-lg bg-wwt-yellow w-full my-12 md:my-24 leading-tight space-y-10 md:space-y-20 p-10 md:p-20 font-bold">
-            <p className="text-6xl md:text-7xl">I watch conference talks so you don't have to.</p>
-            <p className="text-sm">(but you should too because they're totally awesome)</p>
+          <div className="rounded-lg text-white bg-brand-orange w-full my-12 md:my-24 leading-tight space-y-10 md:space-y-20 p-10 md:p-20 font-bold">
+            <p className="text-6xl md:text-7xl">
+              The best way to predict the future is to build it.
+            </p>
+            <p>
+              Join the Langara Computer Science club to connect with fellow
+              future builders today!
+            </p>
           </div>
 
-          <LatestPost post={latestPost} />
+          <div>
+            <h3 className="text-5xl md:text-6xl font-extrabold leading-none mb-10">
+              Resources
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <a
+                className="col-span-1 flex flex-col justify-between bg-black rounded-b-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
+                href="https://github.com/langaracs/course-resources"
+              >
+                <p className="text-3xl font-bold">Course Resources</p>
+
+                <p className="text-xl">
+                  A repository for all your course needs. Share notes, helpful
+                  links, and more on GitHub.
+                </p>
+
+                <FaGithub className="text-6xl" />
+              </a>
+
+              <a
+                className="col-span-1 flex flex-col justify-between bg-black rounded-b-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
+                href="https://github.com/langaracs/students"
+              >
+                <p className="text-3xl font-bold">Student Directory</p>
+
+                <p className="text-xl">
+                  Share a bit about yourself and connect with fellow students.
+                  Looking for a partner for a project? Find them here!
+                </p>
+
+                <FaGithub className="text-6xl" />
+              </a>
+            </div>
+          </div>
         </Container>
       </Layout>
     </>
@@ -39,18 +69,3 @@ const Index = ({ allPosts }: Props) => {
 }
 
 export default Index
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'excerpt',
-    'presenter',
-    'conference',
-  ])
-
-  return {
-    props: { allPosts },
-  }
-}

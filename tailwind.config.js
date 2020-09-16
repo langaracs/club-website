@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'wwt-yellow': '#fbff00',
+        'brand-orange': '#f15a22',
       },
       letterSpacing: {
         tighter: '-.04em',
@@ -21,5 +21,5 @@ module.exports = {
   },
   variants: {
     cursor: ['hover'],
-  }
+  },
 }
