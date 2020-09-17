@@ -34,7 +34,7 @@ const Index = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <a
-                className="col-span-1 flex flex-col justify-between bg-black rounded-b-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
+                className="col-span-1 flex flex-col justify-between bg-black rounded-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
                 href="https://github.com/langaracs/course-resources"
               >
                 <p className="text-3xl font-bold">Course Resources</p>
@@ -48,7 +48,7 @@ const Index = () => {
               </a>
 
               <a
-                className="col-span-1 flex flex-col justify-between bg-black rounded-b-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
+                className="col-span-1 flex flex-col justify-between bg-black rounded-lg text-white text-2xl p-10 hover:text-brand-orange hover:cursor-pointer space-y-5"
                 href="https://github.com/langaracs/students"
               >
                 <p className="text-3xl font-bold">Student Directory</p>
